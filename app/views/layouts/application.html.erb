@@ -9,7 +9,8 @@
 <body>
 	<header>
 		<div class="col-xs-3">
-			<div class="circle">
+			<%= link_to root_path, :class => 'logo' do %>
+			<div class="circle">	
   				<br />
   				TIME
   				<br />
@@ -17,13 +18,14 @@
   				<br />
   				GO
 			</div>
+			<% end %> 
 		</div>
 	<div class="col-xs-4 slogan">
 		cos you know when it's time to go
 	</div>
 	
 	<div class="col-xs-5 links">
-		<%= link_to 'Contribute', '#' %>
+		<%= link_to 'Contribute', new_quote_path %>
 		<%= link_to 'About', '#' %>
 	</div>
 </header>
@@ -37,7 +39,7 @@
 <footer class ="footer">
 	<div class ="container">
 		<div class="col-xs-6">
-			<%= link_to "See more reasons to Bust-a-Move", "#", :class => 'next-quote' %>
+			<%= link_to "See more reasons to Bust-a-Move", root_path, :class => 'next-quote' %>
 		</div>
 		<div class="col-xs-6 footer-blurb">
 			Broadcast Live & Direct from Clichy
