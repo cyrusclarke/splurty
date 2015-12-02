@@ -65,6 +65,13 @@ h2 {
 	letter-spacing: -1.5px;
 }
 
+h3 {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
 .next-quote{
 	color: #f84342;
 	font-family: 'frente_h1regular';
@@ -82,4 +89,10 @@ text-align: right;
 
 .logo:hover { 
 text-decoration: none;
+}
+
+.about {
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-style: italic;
+padding-top: 26px;
 }
