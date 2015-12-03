@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>Splurty</title>
+  		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  		<%= csrf_meta_tags %>
 </head>
+
 <body>
 	<header>
 		<div class="col-xs-3">
@@ -16,13 +18,13 @@
   				<br />
   				TO
   				<br />
-  				GO
+  				QUIT!
 			</div>
 			<% end %> 
 		</div>
 		
 		<div class="col-sm-3 hidden-xs slogan col-md-5">
-		Because You Know When it's Time to Go!
+		Because You Know When it's Time to Go
 		</div>
 
 
@@ -43,10 +45,10 @@
         <h2 class="modal-title" id="myModalLabel">Share Your Story!</h2>
       </div>
       	<%= simple_form_for Quote.new do |f| %>	
-      		<div class="modal-body"><h1>You Know It's Time to Go When...</h1>
+      		<div class="modal-body"><h1>You Know It's Time to Quit When...</h1>
 				<%= f.input :saying, label: 'Enter Your Reason', placeholder: 'enter up to 300 characters'  %>
 				</br> 
-				<%= f.input :author, label: 'Author', placeholder: 'you may want to use a nickname!' %>
+				<%= f.input :author, label: 'Author', placeholder: 'you may want to use a nickname' %>
 				</br>
       		</div>
 
