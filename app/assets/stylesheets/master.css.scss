@@ -6,6 +6,7 @@
 }
 
 .circle {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-weight:bold;
     font-style: italic;
     position: relative;
@@ -16,8 +17,8 @@
     height: 80px;
     margin: 10px 10px;
     text-align: center;
-    color: #19228;
-    font-size: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
     line-height: 16px;
     cursor: pointer;
     transform:rotate(11deg);
@@ -29,17 +30,21 @@
 	/* Helvetica/Arial-based sans serif stack */
 font-family: "Helvetica Neue", Helvetica, sans-serif;
 padding-top: 40px;
+font-size: 20px;
+font-weight: 600;
+letter-spacing: -1.5px;
 }
 
 .links {
-padding-top: 26px;
+padding-top: 40px;
 }
 
 .links a {
 	color:#000000;
 	font-family: 'frente_h1regular';
-	font-size: 25px;
+	font-size: 20px;
 	border-bottom: 1px solid #696763;
+
 }
 
 header {
@@ -54,7 +59,7 @@ hr {
 h1 {
 	font-family: 'frente_h1regular';
 	font-weight: bold;
-	font-size: 48px
+	font-size: 48px;
 	
 }
 
@@ -71,12 +76,20 @@ h3 {
 	letter-spacing: 1px;
 }
 
+h2 span {
+color: #576063;
+font-weight: 300;
+font-size: 20px;
+}
+
+
 .next-quote{
 	color: #f84342;
 	font-family: 'frente_h1regular';
 	font-size: 20px;
-	font-style: italic;
+	font-weight: bold;
 	text-align: center;
+	padding-top: 20px;
 }
 
 .footer-blurb{
@@ -84,6 +97,7 @@ h3 {
 font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-style: none;
 text-align: right;
+
 }
 
 .logo:hover { 
@@ -95,3 +109,14 @@ text-decoration: none;
 font-style: italic;
 padding-top: 26px;
 }
+
+@media (max-width: 750px) {
+	.footer-blurb {
+		text-align: left;
+	}
+}
+
+::selection {
+	background-color: #A2E6FC;
+}
+
