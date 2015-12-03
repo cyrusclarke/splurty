@@ -28,27 +28,30 @@
 
 .slogan {
 	/* Helvetica/Arial-based sans serif stack */
-font-family: "Helvetica Neue", Helvetica, sans-serif;
-padding-top: 40px;
-font-size: 20px;
-font-weight: 600;
-letter-spacing: -1.5px;
+	font-family: 'frente_h1regular';
+	font-weight: bold;
+	font-size: 48px;
+	padding-top: 40px;
+	font-weight: 600;
+	text-align: right;
 }
 
 .links {
 padding-top: 40px;
+text-align: right;
 }
 
 .links a {
 	color:#000000;
-	font-family: 'frente_h1regular';
-	font-size: 20px;
-	border-bottom: 1px solid #696763;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+	
 
 }
 
 header {
-	border-top: 100px solid #A2E6FC;
+	border-top: 20px solid #A2E6FC;
 
 }
 
@@ -60,6 +63,7 @@ h1 {
 	font-family: 'frente_h1regular';
 	font-weight: bold;
 	font-size: 48px;
+	text-align: center;
 	
 }
 
@@ -71,15 +75,15 @@ h2 {
 
 h3 {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 20px;
-	font-weight: 200;
-	letter-spacing: 1px;
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: -1.5px;
 }
 
 h2 span {
-color: #576063;
-font-weight: 300;
-font-size: 20px;
+font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: -1.5px;
 }
 
 
@@ -106,8 +110,7 @@ text-decoration: none;
 
 .about {
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-style: italic;
-padding-top: 26px;
+	padding-top: 26px;
 }
 
 @media (max-width: 750px) {
