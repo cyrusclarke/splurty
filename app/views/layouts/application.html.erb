@@ -10,7 +10,7 @@
 
 <body>
 	<header>
-		<div class="col-xs-6 col-sm-2">
+		<div class="col-xs-6 col-sm-3">
 			<%= link_to root_path, :class => 'logo' do %>
 			<div class="circle">	
   				<br />
@@ -30,11 +30,10 @@
 
 <!-- Button trigger modal -->
 	
-		<div class="col-xs-6 col-sm-2 links">
-			<button class="btn btn-danger" data-toggle="modal", data-target="#myModal">Share Your Reason </button>
-			<div class="hidden"<%= link_to 'Share Your Reason', '#', :data => {:toggle => "modal", :target => "#myModal"} %><br>
-			</div>
-			<%= link_to 'About', about_path %>
+		<div class="col-xs-6 col-sm-3 links">
+			<button class="btn btn-danger" data-toggle="modal", data-target="#myModal">Share Your Reason</button>
+			<%# link_to 'Share Your Reason', '#', :data => {:toggle => "modal", :target => "#myModal"} %><br>
+			<%#= link_to 'About', about_path %>
 		</div>
 	</header>
 
@@ -79,15 +78,23 @@
 
 <footer class ="footer">
 	<div class ="container">
-		<div class="col-xs-12 col-sm-6">
-			<%= link_to "See more reasons to Bust-a-Move", root_path, :class => 'next-quote' %>
+		<div class="col-xs-12 col-sm-12 next-quote">
+			<%= link_to root_path, :class => 'next-quote' do  %>
+			See more reasons to Bust-a-Move
+			<% end %>
 		</div>
-		<div class="col-xs-12 col-sm-6 footer-blurb">
-			Broadcast Live & Direct from Clichy
+	<br class="clear" />
+	<br>
+		<div class="col-xs-12 col-sm-12 footer-blurb">
+			<%= link_to 'About', about_path %>
 		</div>
 		<p class="text-muted"></p>
-	</div>
-</footer>
 
+	</div>
+
+		
+
+</footer>
+		
 </body>
 </html>

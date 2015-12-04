@@ -8,10 +8,10 @@
 .circle {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-weight:bold;
-    font-style: italic;
+    font-style: none;
     position: relative;
     border-radius: 100%;
-    background: #F70743;
+    background: #D9534F;
     border: 1px solid #F7F7F7;
     width: 80px;
     height: 80px;
@@ -21,9 +21,9 @@
     font-size: 16px;
     line-height: 16px;
     cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); /* IE 9 */
+    -webkit-transform:rotate(0deg); /* Opera, Chrome, and Safari */
 }
 
 .slogan {
@@ -33,12 +33,13 @@
 	font-size: 48px;
 	padding-top: 40px;
 	font-weight: 600;
-	text-align: right;
+	text-align: center;
 }
 
 .links {
-padding-top: 40px;
-text-align: right;
+	padding-top: 35px;
+	padding-left: 100px;
+
 }
 
 .links a {
@@ -52,7 +53,7 @@ text-align: right;
 }
 
 header {
-	border-top: 20px solid #F70743;
+	border-top: 20px solid #D9534F;
 
 }
 
@@ -88,7 +89,7 @@ font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
 
-.next-quote{
+.next-quote {
 	color: #f84342;
 	font-family: 'frente_h1regular';
 	font-size: 20px;
@@ -97,11 +98,17 @@ font-family: "Helvetica Neue", Helvetica, sans-serif;
 	padding-top: 20px;
 }
 
-.footer-blurb{
+.footer-blurb {
+	text-align: center;
+}
+
+.footer-blurb a {
 		/* Helvetica/Arial-based sans serif stack */
-font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-style: none;
-text-align: right;
+	color:#000000;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: -1.5px;
 
 }
 
@@ -116,9 +123,17 @@ text-decoration: none;
 
 @media (max-width: 750px) {
 	.footer-blurb {
-		text-align: left;
+		text-align: right;
 	}
 }
+
+@media (max-width: 750px) {
+	.links {
+		padding-left: 40px;
+	}
+}
+
+
 
 ::selection {
 	background-color: #A2E6FC;
