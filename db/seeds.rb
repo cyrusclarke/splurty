@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Quote.create(:saying => "A new saying", :author => "cyrus clark")
+rake db:schema:load
+rake db:seed 

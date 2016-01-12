@@ -34,6 +34,10 @@ gem 'bootstrap-sass' , '~> 3.3.4'
 # add gemfile for simple form
 gem 'simple_form'
 
+# add factory girl for tests
+gem "factory_girl_rails", "~> 4.0"
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
